@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download App</title>
+    <style>
+      /* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.download-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn i {
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+.android {
+    background: #3ddc84;
+}
+
+.android:hover {
+    background: #2ca866;
+    transform: translateY(-2px);
+}
+
+.desktop {
+    background: #4285f4;
+}
+
+.desktop:hover {
+    background: #3169c4;
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .container {
+        width: 95%;
+    }
+}
+
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Download Our App</h1>
+        <p>Get the latest version for Android and Desktop</p>
+
+        <div class="download-buttons">
+            <a href="android-app.apk" class="btn android">
+                <i class="fab fa-android"></i> Download for Android
+            </a>
+            <a href="desktop-app.exe" class="btn desktop">
+                <i class="fas fa-desktop"></i> Download for Desktop
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
